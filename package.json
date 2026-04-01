@@ -1,6 +1,6 @@
 {
   "name": "@joknoll/lucide-svelte-animated",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Animated lucide icons in svelte.",
   "homepage": "https://github.com/joknoll/lucide-svelte-animated#readme",
   "license": "MIT",
