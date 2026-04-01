@@ -28,7 +28,7 @@
     "play": "vp dev",
     "test": "vp test",
     "typecheck": "svelte-check --tsconfig ./tsconfig.json",
-    "release": "bumpp",
+    "bump": "bumpp",
     "prepublishOnly": "pnpm run build",
     "prepare": "vp config"
   },

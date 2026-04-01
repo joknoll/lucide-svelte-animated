@@ -26,4 +26,27 @@ export default defineConfig({
   lint: { options: { typeAware: true, typeCheck: true } },
   root: "./playground",
   plugins: [svelteVitePlugin()],
+
+  run: {
+    cache: true,
+    tasks: {
+      "setup:deps": {
+        cache: false,
+        command: "vp install",
+      },
+      setup: {
+        cache: false,
+        command: "true",
+        dependsOn: ["setup:deps"],
+      },
+      clean: {
+        cache: false,
+        command: "rm -rf node_modules dist playground/node_modules",
+      },
+      release: {
+        cache: false,
+        command: "vp run build && bumpp --git-check --no-push && vp pm publish",
+      },
+    },
+  },
 });
