@@ -2,7 +2,7 @@
   import * as icons from "../../src";
 
   const iconEntries = Object.entries(icons).sort(([nameA], [nameB]) =>
-    nameA.localeCompare(nameB)
+    nameA.localeCompare(nameB),
   );
 </script>
 
@@ -13,7 +13,7 @@
     {#each iconEntries as [name, Icon]}
       <div class="card">
         <div class="icon">
-          <svelte:component this={Icon} />
+          <svelte:component this={Icon} size={32} />
         </div>
         <div class="name">{name}</div>
       </div>

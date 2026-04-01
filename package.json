@@ -10,7 +10,8 @@
     "url": "git+https://github.com/joknoll/lucide-svelte-animated.git"
   },
   "files": [
-    "dist"
+    "dist",
+    "src/icons"
   ],
   "type": "module",
   "exports": {
