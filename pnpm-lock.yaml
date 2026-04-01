@@ -17,14 +17,13 @@ overrides:
 importers:
 
   .:
-    dependencies:
-      '@tsdown/css':
-        specifier: ^0.21.7
-        version: 0.21.7(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(jiti@2.6.1)(postcss@8.5.8)(tsdown@0.21.7)(yaml@2.8.3)
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
         specifier: ^7.0.0
         version: 7.0.0(@voidzero-dev/vite-plus-core@0.1.15(@tsdown/css@0.21.7)(@types/node@25.5.0)(jiti@2.6.1)(typescript@6.0.2)(yaml@2.8.3))(svelte@5.55.1)
+      '@tsdown/css':
+        specifier: ^0.21.7
+        version: 0.21.7(@emnapi/core@1.9.1)(@emnapi/runtime@1.9.1)(jiti@2.6.1)(postcss@8.5.8)(tsdown@0.21.7)(yaml@2.8.3)
       '@tsconfig/svelte':
         specifier: ^5.0.8
         version: 5.0.8
