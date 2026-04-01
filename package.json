@@ -42,6 +42,7 @@
     "@tsconfig/svelte": "^5.0.8",
     "@types/node": "^25.5.0",
     "bumpp": "^11.0.1",
+    "playwright": "*",
     "rollup-plugin-svelte": "^7.2.3",
     "svelte": "^5.55.0",
     "svelte-check": "^4.4.5",
@@ -49,10 +50,12 @@
     "svelte2tsx": "^0.7.52",
     "typescript": "^6.0.2",
     "vite": "catalog:",
+    "vite-plus": "catalog:",
     "vitest": "catalog:",
-    "vitest-browser-svelte": "^2.1.0",
-    "playwright": "*",
-    "vite-plus": "catalog:"
+    "vitest-browser-svelte": "^2.1.0"
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@tsdown/css": "^0.21.7"
+  }
 }
