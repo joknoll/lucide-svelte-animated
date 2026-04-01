@@ -45,7 +45,7 @@ export default defineConfig({
       },
       release: {
         cache: false,
-        command: "vp run build && bumpp --git-check --no-push && vp pm publish",
+        command: "vp run build && bumpp --git-check --no-push && pnpm publish",
       },
     },
   },
