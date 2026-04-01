@@ -1,13 +1,13 @@
 /// <reference types="vitest/config" />
-import { svelte as svelteVitePlugin } from "@sveltejs/vite-plugin-svelte"
-import { defineConfig } from "vite-plus"
-import { sveltePreprocess } from 'svelte-preprocess'
-import { svelteDtsPlugin } from './scripts/tsdown-plugin-svelte-dts.js'
+import { svelte as svelteVitePlugin } from "@sveltejs/vite-plugin-svelte";
+import { defineConfig } from "vite-plus";
+import { sveltePreprocess } from "svelte-preprocess";
+import { svelteDtsPlugin } from "./scripts/tsdown-plugin-svelte-dts.js";
 import svelte from "rollup-plugin-svelte";
 
 export default defineConfig({
   staged: {
-    "*": "vp check --fix"
+    "*": "vp check --fix",
   },
   pack: {
     dts: true,
@@ -23,8 +23,7 @@ export default defineConfig({
     ],
   },
   fmt: {},
-  lint: {"options":{"typeAware":true,"typeCheck":true}},
+  lint: { options: { typeAware: true, typeCheck: true } },
   root: "./playground",
   plugins: [svelteVitePlugin()],
-  
-})
+});

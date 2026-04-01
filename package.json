@@ -1,26 +1,26 @@
 {
   "name": "svelte-components-starter",
-  "type": "module",
   "version": "0.0.0",
   "description": "A starter for creating a Svelte component library.",
-  "author": "Author Name <author.name@mail.com>",
-  "license": "MIT",
   "homepage": "https://github.com/author/library#readme",
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "license": "MIT",
+  "author": "Author Name <author.name@mail.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/author/library.git"
   },
-  "bugs": {
-    "url": "https://github.com/author/library/issues"
-  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json",
     "./style.css": "./dist/style.css"
   },
-  "files": [
-    "dist"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -34,8 +34,8 @@
     "prepublishOnly": "pnpm run build",
     "prepare": "vp config"
   },
-  "peerDependencies": {
-    "svelte": "^5.0.0"
+  "dependencies": {
+    "@tsdown/css": "^0.21.7"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
@@ -54,8 +54,8 @@
     "vitest": "catalog:",
     "vitest-browser-svelte": "^2.1.0"
   },
-  "packageManager": "pnpm@10.33.0",
-  "dependencies": {
-    "@tsdown/css": "^0.21.7"
-  }
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "packageManager": "pnpm@10.33.0"
 }
