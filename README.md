@@ -1,35 +1,25 @@
-# svelte-components-starter
+# @joknoll/lucide-svelte-animated
 
-A starter for creating a Svelte component library.
+Animated [Lucide](https://lucide.dev/) icons as Svelte 5 components.
 
-## Development
+## Usage
 
-- Install dependencies:
+```svelte
+<script lang="ts">
+	import { Activity, ArrowRight, Bell } from '@joknoll/lucide-svelte-animated';
+</script>
 
-```bash
-npm install
+<Activity />
+<ArrowRight size={20} />
+<Bell color="#0f766e" strokeWidth={1.5} animate />
 ```
 
-- Run the unit tests:
+All icons are exported as named components and share the same props:
 
-```bash
-npm run test
-```
+- `size?: number` default `24`
+- `color?: string` default `currentColor`
+- `strokeWidth?: number` default `2`
+- `animate?: boolean`
+- `class?: string`
 
-- Build the library:
-
-```bash
-npm run build
-```
-
-- Run the playground for development:
-
-```bash
-npm run play
-```
-
-- Type checking:
-
-```bash
-npm run typecheck
-```
+Icons animate on hover and can also be rendered in an animated state with `animate`.
