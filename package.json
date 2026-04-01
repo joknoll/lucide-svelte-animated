@@ -1,0 +1,58 @@
+{
+  "name": "svelte-components-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "A starter for creating a Svelte component library.",
+  "author": "Author Name <author.name@mail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/author/library#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author/library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json",
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "play": "vp dev",
+    "test": "vp test",
+    "typecheck": "svelte-check --tsconfig ./tsconfig.json",
+    "release": "bumpp",
+    "prepublishOnly": "pnpm run build",
+    "prepare": "vp config"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.0.0",
+    "@tsconfig/svelte": "^5.0.8",
+    "@types/node": "^25.5.0",
+    "bumpp": "^11.0.1",
+    "rollup-plugin-svelte": "^7.2.3",
+    "svelte": "^5.55.0",
+    "svelte-check": "^4.4.5",
+    "svelte-preprocess": "^6.0.3",
+    "svelte2tsx": "^0.7.52",
+    "typescript": "^6.0.2",
+    "vite": "catalog:",
+    "vitest": "catalog:",
+    "vitest-browser-svelte": "^2.1.0",
+    "playwright": "*",
+    "vite-plus": "catalog:"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
