@@ -11,9 +11,11 @@
   },
   "files": [
     "dist",
-    "src/icons"
+    "src"
   ],
   "type": "module",
+  "svelte": "./src/index.ts",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": "./dist/index.js",
     "./package.json": "./package.json",
@@ -35,8 +37,8 @@
   "dependencies": {},
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.0.0",
-    "@tsdown/css": "^0.21.7",
     "@tsconfig/svelte": "^5.0.8",
+    "@tsdown/css": "^0.21.7",
     "@types/node": "^25.5.0",
     "bumpp": "^11.0.1",
     "playwright": "*",
